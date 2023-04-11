@@ -2,6 +2,7 @@ package cs.hku.hk.android_code;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button test_button = (Button) findViewById(R.id.button);
+        /*
         test_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+         */
+        //activity redirect, jump to list item activity
+        Intent intent = new Intent(MainActivity.this, ListItemActivity.class);
+        startActivity(intent);
     }
 
 
