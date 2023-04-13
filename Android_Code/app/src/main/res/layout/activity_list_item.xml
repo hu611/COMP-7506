@@ -17,10 +17,9 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text="Your items"
-        android:textSize="120px"
+        android:textSize="50px"
         android:textStyle="italic"
         android:fontFamily="@font/dancing_script"
-        android:textWeight="400"
         android:textColor="@color/purple_200">
     </TextView>
     <GridView
