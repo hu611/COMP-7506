@@ -63,8 +63,13 @@ public class ListItemActivity extends AppCompatActivity {
 
             }
         });
+
+
+        /*
         new DownloadImageTask((ImageView) findViewById(R.id.imageView))
                 .execute("http://10.0.2.2:9010/testimage");
+
+         */
     }
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageView viewImage;

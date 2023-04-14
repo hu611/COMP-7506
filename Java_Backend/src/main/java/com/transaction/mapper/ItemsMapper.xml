@@ -15,4 +15,7 @@
         item_id, user_id, item_pic_loc, item_name
     </sql>
 
+    <select id="selectAllItems" resultMap="BaseResultMap">
+        select * from items
+    </select>
 </mapper>
