@@ -17,5 +17,10 @@
 
     <select id="selectAllItems" resultMap="BaseResultMap">
         select * from items
+        <where>
+            <if test="user_id != null">
+                user_id = #{user_id}
+            </if>
+        </where>
     </select>
 </mapper>

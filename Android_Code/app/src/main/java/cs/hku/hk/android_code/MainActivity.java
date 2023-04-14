@@ -1,6 +1,7 @@
 package cs.hku.hk.android_code;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,33 +23,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button test_button = (Button) findViewById(R.id.button);
+
+        //add footer
+        FooterFragment myFragment = new FooterFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.footer_fragment, myFragment).commit();
         /*
         test_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Request request = new Request.Builder().url("http://10.0.2.2:9010/test").build();
-                        try {
-                            Response response = client.newCall(request).execute();
-                            if(response.isSuccessful()) {
-                                System.out.println(response.body().string());
-                            } else {
-                                System.out.println("Request failed");
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            System.out.println("Request failed");
-                        }
-                    }
-                }).start();
+
 
             }
         });
          */
         //activity redirect, jump to list item activity
         Intent intent = new Intent(MainActivity.this, ListItemActivity.class);
+        //send extra information to ListItemActivity
+        //intent.putExtra("user","all");
         startActivity(intent);
     }
 

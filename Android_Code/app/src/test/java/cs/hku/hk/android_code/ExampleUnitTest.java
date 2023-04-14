@@ -1,5 +1,6 @@
 package cs.hku.hk.android_code;
 
+import org.json.JSONObject;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -29,10 +30,10 @@ public class ExampleUnitTest {
     @Test
     public void request_all_image_loc() throws Exception {
 
-        String your_url = "http://localhost:9010/getAllImageLocation";
+        String your_url = "http://localhost:9010/testimage";
         String your_method = "GET";
-        String output = Utils.send_http_request(your_url, your_method);
-        System.out.println(output);
+        JSONObject jsonObject = Utils.send_http_request(your_url, your_method);
+        System.out.println(jsonObject.get("result"));
 
 
 

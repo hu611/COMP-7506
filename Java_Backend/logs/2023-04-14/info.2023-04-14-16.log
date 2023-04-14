@@ -1,0 +1,1364 @@
+2023-04-14 16:00:05,732 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 10996 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:00:05,732 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 10996 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:00:05,751 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:00:05,751 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:00:05,754 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:00:05,754 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:00:06,321 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:00:06,321 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:00:06,322 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:00:06,322 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:00:06,406 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:00:06,406 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:00:06,712 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:00:06,712 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:00:06,720 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:00:06,720 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:00:06,720 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:00:06,720 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:00:06,721 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:00:06,721 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:00:06,791 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:00:06,791 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:00:06,791 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 991 ms
+2023-04-14 16:00:06,791 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 991 ms
+2023-04-14 16:00:06,877 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:00:06,877 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:00:06,934 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:00:06,934 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:00:07,072 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:00:07,072 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:00:07,077 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:00:07,077 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:00:07,079 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:00:07,079 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:00:07,098 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:00:07,098 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:00:07,100 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:00:07,100 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:00:07,105 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:00:07,105 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:00:07,108 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:00:07,108 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:00:07,109 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:00:07,109 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:00:07,112 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:00:07,112 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:00:07,115 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:00:07,115 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:00:07,123 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:00:07,123 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:00:07,126 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:00:07,126 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:00:07,131 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:00:07,131 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:00:07,135 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:00:07,135 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:00:07,139 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:00:07,139 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:00:07,144 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:00:07,144 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:00:07,259 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:00:07,259 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:00:07,432 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:00:07,432 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:00:07,521 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:00:07,521 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:00:07,585 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:00:07,585 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:00:07,624 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:00:07,624 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:00:07,634 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.414 seconds (JVM running for 3.229)
+2023-04-14 16:00:07,634 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.414 seconds (JVM running for 3.229)
+2023-04-14 16:00:12,325 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:00:12,325 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:00:12,325 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:00:12,325 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:00:12,331 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 5 ms
+2023-04-14 16:00:12,331 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 5 ms
+2023-04-14 16:00:12,470 ERROR [http-nio-9010-exec-1][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.length()" because "user_id" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.length()" because "user_id" is null
+	at com.transaction.service.TransactionServiceImpl.getUserImage(TransactionServiceImpl.java:22)
+	at com.transaction.controller.TransactionController.getUserImage(TransactionController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023-04-14 16:00:12,470 ERROR [http-nio-9010-exec-1][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.length()" because "user_id" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "String.length()" because "user_id" is null
+	at com.transaction.service.TransactionServiceImpl.getUserImage(TransactionServiceImpl.java:22)
+	at com.transaction.controller.TransactionController.getUserImage(TransactionController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023-04-14 16:00:59,569 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 2092 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:00:59,569 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 2092 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:00:59,580 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:00:59,580 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:00:59,581 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:00:59,581 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:01:00,071 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:01:00,071 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:01:00,072 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:01:00,072 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:01:00,155 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:01:00,155 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:01:00,449 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:01:00,449 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:01:00,456 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:01:00,456 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:01:00,554 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:01:00,554 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:01:00,555 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:01:00,555 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:01:00,621 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:01:00,621 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:01:00,622 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 995 ms
+2023-04-14 16:01:00,622 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 995 ms
+2023-04-14 16:01:00,704 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:01:00,704 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:01:00,759 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:01:00,759 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:01:00,891 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:01:00,891 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:01:00,896 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:01:00,896 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:01:00,899 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:01:00,899 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:01:00,915 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:01:00,915 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:01:00,917 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:01:00,917 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:01:00,922 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:01:00,922 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:01:00,924 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:01:00,924 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:01:00,925 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:01:00,925 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:01:00,927 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:01:00,927 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:01:00,933 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:01:00,933 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:01:00,936 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:01:00,936 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:01:00,939 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:01:00,939 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:01:00,941 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:01:00,941 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:01:00,944 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:01:00,944 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:01:00,948 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:01:00,948 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:01:00,951 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:01:00,951 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:01:00,953 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:01:00,953 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:01:01,053 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:01:01,053 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:01:01,139 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:01:01,139 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:01:01,202 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:01:01,202 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:01:01,240 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:01:01,240 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:01:01,250 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.134 seconds (JVM running for 3.059)
+2023-04-14 16:01:01,250 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.134 seconds (JVM running for 3.059)
+2023-04-14 16:01:03,739 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:01:03,739 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:01:03,740 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:01:03,740 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:01:03,746 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 6 ms
+2023-04-14 16:01:03,746 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 6 ms
+2023-04-14 16:01:03,778 ERROR [http-nio-9010-exec-1][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map] with root cause
+java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map
+	at com.baomidou.mybatisplus.core.MybatisConfiguration$StrictMap.get(MybatisConfiguration.java:448)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.getParameterMap(MybatisConfiguration.java:295)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementParameterMap(MapperBuilderAssistant.java:368)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:291)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:113)
+	at org.apache.ibatis.session.Configuration.lambda$buildAllStatements$2(Configuration.java:882)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:881)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.hasStatement(MybatisConfiguration.java:336)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:853)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:257)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:51)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:117)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectAllItems(Unknown Source)
+	at com.transaction.service.TransactionServiceImpl.getUserImage(TransactionServiceImpl.java:26)
+	at com.transaction.controller.TransactionController.getUserImage(TransactionController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023-04-14 16:01:03,778 ERROR [http-nio-9010-exec-1][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map] with root cause
+java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map
+	at com.baomidou.mybatisplus.core.MybatisConfiguration$StrictMap.get(MybatisConfiguration.java:448)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.getParameterMap(MybatisConfiguration.java:295)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementParameterMap(MapperBuilderAssistant.java:368)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:291)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:113)
+	at org.apache.ibatis.session.Configuration.lambda$buildAllStatements$2(Configuration.java:882)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:881)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.hasStatement(MybatisConfiguration.java:336)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:853)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:257)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:51)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:117)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectAllItems(Unknown Source)
+	at com.transaction.service.TransactionServiceImpl.getUserImage(TransactionServiceImpl.java:26)
+	at com.transaction.controller.TransactionController.getUserImage(TransactionController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023-04-14 16:02:09,575 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 12284 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:02:09,575 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 12284 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:02:09,587 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:02:09,587 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:02:09,691 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:02:09,691 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:02:10,203 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:02:10,203 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:02:10,205 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:02:10,205 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:02:10,287 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:02:10,287 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:02:10,572 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:02:10,572 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:02:10,578 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:02:10,578 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:02:10,579 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:02:10,579 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:02:10,579 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:02:10,579 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:02:10,645 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:02:10,645 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:02:10,646 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 915 ms
+2023-04-14 16:02:10,646 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 915 ms
+2023-04-14 16:02:10,726 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:02:10,726 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:02:10,780 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:02:10,780 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:02:10,912 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:02:10,912 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:02:10,916 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:02:10,916 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:02:10,919 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:02:10,919 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:02:10,934 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:02:10,934 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:02:10,936 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:02:10,936 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:02:10,940 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:02:10,940 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:02:10,943 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:02:10,943 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:02:10,944 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:02:10,944 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:02:10,946 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:02:10,946 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:02:10,948 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:02:10,948 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:02:10,951 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:02:10,951 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:02:10,953 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:02:10,953 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:02:10,960 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:02:10,960 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:02:10,962 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:02:10,962 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:02:10,965 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:02:10,965 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:02:10,968 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:02:10,968 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:02:10,970 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:02:10,970 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:02:11,063 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:02:11,063 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:02:11,148 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:02:11,148 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:02:11,212 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:02:11,212 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:02:11,249 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:02:11,249 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:02:11,259 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.155 seconds (JVM running for 3.175)
+2023-04-14 16:02:11,259 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.155 seconds (JVM running for 3.175)
+2023-04-14 16:02:14,555 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:02:14,555 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:02:14,555 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:02:14,555 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:02:14,561 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 5 ms
+2023-04-14 16:02:14,561 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 5 ms
+2023-04-14 16:02:14,591 ERROR [http-nio-9010-exec-1][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map] with root cause
+java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map
+	at com.baomidou.mybatisplus.core.MybatisConfiguration$StrictMap.get(MybatisConfiguration.java:448)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.getParameterMap(MybatisConfiguration.java:295)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementParameterMap(MapperBuilderAssistant.java:368)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:291)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:113)
+	at org.apache.ibatis.session.Configuration.lambda$buildAllStatements$2(Configuration.java:882)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:881)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.hasStatement(MybatisConfiguration.java:336)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:853)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:257)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:51)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:117)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectAllItems(Unknown Source)
+	at com.transaction.service.TransactionServiceImpl.getUserImage(TransactionServiceImpl.java:26)
+	at com.transaction.controller.TransactionController.getUserImage(TransactionController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023-04-14 16:02:14,591 ERROR [http-nio-9010-exec-1][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map] with root cause
+java.lang.IllegalArgumentException: Parameter Maps collection does not contain value for com.transaction.mapper.ItemsMapper.Map
+	at com.baomidou.mybatisplus.core.MybatisConfiguration$StrictMap.get(MybatisConfiguration.java:448)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.getParameterMap(MybatisConfiguration.java:295)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementParameterMap(MapperBuilderAssistant.java:368)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:291)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:113)
+	at org.apache.ibatis.session.Configuration.lambda$buildAllStatements$2(Configuration.java:882)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:881)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.hasStatement(MybatisConfiguration.java:336)
+	at org.apache.ibatis.session.Configuration.hasStatement(Configuration.java:853)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.resolveMappedStatement(MapperMethod.java:257)
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:227)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:51)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedInvoker$0(MybatisMapperProxy.java:111)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.baomidou.mybatisplus.core.toolkit.CollectionUtils.computeIfAbsent(CollectionUtils.java:117)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedInvoker(MybatisMapperProxy.java:98)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectAllItems(Unknown Source)
+	at com.transaction.service.TransactionServiceImpl.getUserImage(TransactionServiceImpl.java:26)
+	at com.transaction.controller.TransactionController.getUserImage(TransactionController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023-04-14 16:03:10,257 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 1528 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:03:10,257 INFO [main][StartupInfoLogger.java:55] - Starting SecondHandTransactionApplication on DESKTOP-3QO7P5A with PID 1528 (D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend\target\classes started by huweiyan in D:\Android_Project\group_project\COMP-7506-Secondary-Market\Java_Backend)
+2023-04-14 16:03:10,266 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:03:10,266 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2023-04-14 16:03:10,268 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:03:10,268 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2023-04-14 16:03:10,771 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:03:10,771 DEBUG [main][MybatisPlusAutoConfiguration.java:278] - Searching for mappers annotated with @Mapper
+2023-04-14 16:03:10,773 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:03:10,773 DEBUG [main][MybatisPlusAutoConfiguration.java:282] - Using auto-configuration base package 'com.transaction'
+2023-04-14 16:03:10,871 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:03:10,871 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-04-14 16:03:11,158 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:03:11,158 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 9010 (http)
+2023-04-14 16:03:11,164 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:03:11,164 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:03:11,165 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:03:11,165 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-04-14 16:03:11,166 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:03:11,166 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-04-14 16:03:11,232 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:03:11,232 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-04-14 16:03:11,232 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 926 ms
+2023-04-14 16:03:11,232 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 926 ms
+2023-04-14 16:03:11,309 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:03:11,309 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@66d3c617
+2023-04-14 16:03:11,467 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:03:11,467 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+2023-04-14 16:03:11,572 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectAllItems
+2023-04-14 16:03:11,572 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectAllItems
+2023-04-14 16:03:11,596 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:03:11,596 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.insert
+2023-04-14 16:03:11,601 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:03:11,601 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.delete
+2023-04-14 16:03:11,603 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:03:11,603 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteByMap
+2023-04-14 16:03:11,618 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:03:11,618 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteById
+2023-04-14 16:03:11,624 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:03:11,624 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.deleteBatchIds
+2023-04-14 16:03:11,628 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:03:11,628 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.update
+2023-04-14 16:03:11,630 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:03:11,630 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.updateById
+2023-04-14 16:03:11,631 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:03:11,631 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectById
+2023-04-14 16:03:11,633 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:03:11,633 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectBatchIds
+2023-04-14 16:03:11,635 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:03:11,635 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectByMap
+2023-04-14 16:03:11,638 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:03:11,638 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectOne
+2023-04-14 16:03:11,641 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:03:11,641 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectCount
+2023-04-14 16:03:11,658 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:03:11,658 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMaps
+2023-04-14 16:03:11,661 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:03:11,661 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectMapsPage
+2023-04-14 16:03:11,664 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:03:11,664 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectObjs
+2023-04-14 16:03:11,667 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:03:11,667 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectList
+2023-04-14 16:03:11,669 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:03:11,669 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.transaction.mapper.ItemsMapper.selectPage
+2023-04-14 16:03:11,766 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:03:11,766 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-14 16:03:11,850 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:03:11,850 DEBUG [main][MybatisPlusAutoConfiguration.java:314] - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2023-04-14 16:03:11,908 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:03:11,908 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-9010"]
+2023-04-14 16:03:11,944 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:03:11,944 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 9010 (http) with context path ''
+2023-04-14 16:03:11,954 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.172 seconds (JVM running for 3.11)
+2023-04-14 16:03:11,954 INFO [main][StartupInfoLogger.java:61] - Started SecondHandTransactionApplication in 2.172 seconds (JVM running for 3.11)
+2023-04-14 16:03:17,327 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:03:17,327 INFO [http-nio-9010-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-14 16:03:17,327 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:03:17,327 INFO [http-nio-9010-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-04-14 16:03:17,333 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 5 ms
+2023-04-14 16:03:17,333 INFO [http-nio-9010-exec-1][FrameworkServlet.java:547] - Completed initialization in 5 ms
+2023-04-14 16:03:17,387 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1066] - HikariPool-1 - configuration:
+2023-04-14 16:03:17,387 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1066] - HikariPool-1 - configuration:
+2023-04-14 16:03:17,389 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - allowPoolSuspension.............false
+2023-04-14 16:03:17,389 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - allowPoolSuspension.............false
+2023-04-14 16:03:17,389 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - autoCommit......................true
+2023-04-14 16:03:17,389 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - autoCommit......................true
+2023-04-14 16:03:17,389 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - catalog.........................none
+2023-04-14 16:03:17,389 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - catalog.........................none
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - connectionInitSql...............none
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - connectionInitSql...............none
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - connectionTestQuery.............none
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - connectionTestQuery.............none
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - connectionTimeout...............30000
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - connectionTimeout...............30000
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSource......................none
+2023-04-14 16:03:17,390 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSource......................none
+2023-04-14 16:03:17,391 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSourceClassName.............none
+2023-04-14 16:03:17,391 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSourceClassName.............none
+2023-04-14 16:03:17,391 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSourceJNDI..................none
+2023-04-14 16:03:17,391 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSourceJNDI..................none
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSourceProperties............{password=<masked>}
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - dataSourceProperties............{password=<masked>}
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - driverClassName................."com.mysql.cj.jdbc.Driver"
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - driverClassName................."com.mysql.cj.jdbc.Driver"
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - exceptionOverrideClassName......none
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - exceptionOverrideClassName......none
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - healthCheckProperties...........{}
+2023-04-14 16:03:17,392 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - healthCheckProperties...........{}
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - healthCheckRegistry.............none
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - healthCheckRegistry.............none
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - idleTimeout.....................600000
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - idleTimeout.....................600000
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - initializationFailTimeout.......1
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - initializationFailTimeout.......1
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - isolateInternalQueries..........false
+2023-04-14 16:03:17,393 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - isolateInternalQueries..........false
+2023-04-14 16:03:17,394 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - jdbcUrl.........................jdbc:mysql://localhost:3306/comp_7506
+2023-04-14 16:03:17,394 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - jdbcUrl.........................jdbc:mysql://localhost:3306/comp_7506
+2023-04-14 16:03:17,394 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - leakDetectionThreshold..........0
+2023-04-14 16:03:17,394 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - leakDetectionThreshold..........0
+2023-04-14 16:03:17,493 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - maxLifetime.....................1800000
+2023-04-14 16:03:17,493 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - maxLifetime.....................1800000
+2023-04-14 16:03:17,494 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - maximumPoolSize.................10
+2023-04-14 16:03:17,494 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - maximumPoolSize.................10
+2023-04-14 16:03:17,494 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - metricRegistry..................none
+2023-04-14 16:03:17,494 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - metricRegistry..................none
+2023-04-14 16:03:17,494 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - metricsTrackerFactory...........none
+2023-04-14 16:03:17,494 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - metricsTrackerFactory...........none
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - minimumIdle.....................10
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - minimumIdle.....................10
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - password........................<masked>
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - password........................<masked>
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - poolName........................"HikariPool-1"
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - poolName........................"HikariPool-1"
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - readOnly........................false
+2023-04-14 16:03:17,495 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - readOnly........................false
+2023-04-14 16:03:17,496 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - registerMbeans..................false
+2023-04-14 16:03:17,496 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - registerMbeans..................false
+2023-04-14 16:03:17,496 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - scheduledExecutor...............none
+2023-04-14 16:03:17,496 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - scheduledExecutor...............none
+2023-04-14 16:03:17,496 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - schema..........................none
+2023-04-14 16:03:17,496 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - schema..........................none
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - threadFactory...................internal
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - threadFactory...................internal
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - transactionIsolation............default
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - transactionIsolation............default
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - username........................"root"
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - username........................"root"
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - validationTimeout...............5000
+2023-04-14 16:03:17,497 DEBUG [http-nio-9010-exec-1][HikariConfig.java:1098] - validationTimeout...............5000
+2023-04-14 16:03:17,497 INFO [http-nio-9010-exec-1][HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-04-14 16:03:17,497 INFO [http-nio-9010-exec-1][HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-04-14 16:03:17,761 DEBUG [http-nio-9010-exec-1][HikariPool.java:564] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1930f73
+2023-04-14 16:03:17,761 DEBUG [http-nio-9010-exec-1][HikariPool.java:564] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1930f73
+2023-04-14 16:03:17,763 INFO [http-nio-9010-exec-1][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-04-14 16:03:17,763 INFO [http-nio-9010-exec-1][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-04-14 16:03:17,770 DEBUG [http-nio-9010-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:03:17,770 DEBUG [http-nio-9010-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:03:17,789 DEBUG [http-nio-9010-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:03:17,789 DEBUG [http-nio-9010-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:03:17,808 DEBUG [http-nio-9010-exec-1][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:03:17,808 DEBUG [http-nio-9010-exec-1][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:03:17,869 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-04-14 16:03:17,869 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-04-14 16:03:17,890 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@310ec44e
+2023-04-14 16:03:17,890 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@310ec44e
+2023-04-14 16:03:17,909 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@606b18a3
+2023-04-14 16:03:17,909 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@606b18a3
+2023-04-14 16:03:17,927 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@249d7f75
+2023-04-14 16:03:17,927 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@249d7f75
+2023-04-14 16:03:17,947 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64258461
+2023-04-14 16:03:17,947 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64258461
+2023-04-14 16:03:17,964 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ff1e55e
+2023-04-14 16:03:17,964 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ff1e55e
+2023-04-14 16:03:17,985 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7243cf59
+2023-04-14 16:03:17,985 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7243cf59
+2023-04-14 16:03:18,001 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62bdd7df
+2023-04-14 16:03:18,001 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62bdd7df
+2023-04-14 16:03:18,017 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27ff198c
+2023-04-14 16:03:18,017 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27ff198c
+2023-04-14 16:03:18,033 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@df93f9d
+2023-04-14 16:03:18,033 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@df93f9d
+2023-04-14 16:03:18,034 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:03:18,034 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:03:47,881 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:03:47,881 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:03:47,882 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:03:47,882 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:03:49,669 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items WHERE user_id = ?
+2023-04-14 16:03:49,669 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items WHERE user_id = ?
+2023-04-14 16:03:49,670 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 1(String)
+2023-04-14 16:03:49,670 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 1(String)
+2023-04-14 16:03:49,699 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
+2023-04-14 16:03:49,699 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
+2023-04-14 16:04:17,894 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:04:17,894 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:04:17,894 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:04:17,894 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:04:47,906 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:04:47,906 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:04:47,906 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:04:47,906 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:05:17,912 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:05:17,912 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:05:17,913 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:05:17,913 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:05:47,920 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:05:47,920 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:05:47,921 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:05:47,921 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:06:17,925 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:06:17,925 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:06:17,925 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:06:17,925 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:06:47,927 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:06:47,927 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:06:47,927 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:06:47,927 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:07:17,933 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:07:17,933 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:07:17,933 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:07:17,933 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:07:47,938 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:07:47,938 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:07:47,938 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:07:47,938 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:08:17,948 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:08:17,948 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:08:17,949 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:08:17,949 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:08:47,960 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:08:47,960 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:08:47,960 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:08:47,960 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:09:17,973 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:09:17,973 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:09:17,973 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:09:17,973 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:09:47,981 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:09:47,981 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:09:47,981 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:09:47,981 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:10:17,992 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:10:17,992 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:10:17,992 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:10:17,992 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:10:47,999 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:10:47,999 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:10:47,999 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:10:47,999 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:11:18,011 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:11:18,011 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:11:18,011 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:11:18,011 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:11:48,019 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:11:48,019 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:11:48,020 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:11:48,020 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:12:18,025 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:12:18,025 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:12:18,025 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:12:18,025 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:12:48,033 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:12:48,033 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:12:48,034 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:12:48,034 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:13:18,047 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:13:18,047 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:13:18,048 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:13:18,048 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:13:48,057 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:13:48,057 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:13:48,058 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:13:48,058 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:14:18,058 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:14:18,058 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:14:18,058 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:14:18,058 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:14:48,070 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:14:48,070 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:14:48,071 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:14:48,071 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:15:18,076 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:15:18,076 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:15:18,076 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:15:18,076 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:15:48,090 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:15:48,090 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:15:48,090 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:15:48,090 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:16:18,093 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:16:18,093 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:16:18,093 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:16:18,093 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:16:48,105 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:16:48,105 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:16:48,105 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:16:48,105 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:17:18,118 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:17:18,118 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:17:18,118 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:17:18,118 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:17:48,134 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:17:48,134 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:17:48,134 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:17:48,134 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:18:18,143 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:18:18,143 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:18:18,143 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:18:18,143 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:18:48,148 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:18:48,148 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:18:48,148 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:18:48,148 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:19:18,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:19:18,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:19:18,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:19:18,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:19:48,152 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:19:48,152 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:19:48,152 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:19:48,152 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:20:18,166 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:20:18,166 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:20:18,166 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:20:18,166 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:20:48,172 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:20:48,172 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:20:48,172 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:20:48,172 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:21:18,179 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:21:18,179 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:21:18,179 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:21:18,179 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:21:48,181 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:21:48,181 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:21:48,181 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:21:48,181 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:22:18,192 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:22:18,192 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:22:18,192 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:22:18,192 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:22:48,204 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:22:48,204 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:22:48,204 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:22:48,204 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:23:18,218 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:23:18,218 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:23:18,219 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:23:18,219 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:23:48,224 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:23:48,224 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:23:48,224 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:23:48,224 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:24:18,230 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:24:18,230 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:24:18,230 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:24:18,230 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:24:48,245 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:24:48,245 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:24:48,245 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:24:48,245 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:25:18,259 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:25:18,259 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:25:18,259 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:25:18,259 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:25:48,260 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:25:48,260 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:25:48,260 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:25:48,260 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:26:00,927 DEBUG [http-nio-9010-exec-5][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:26:00,927 DEBUG [http-nio-9010-exec-5][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:26:00,927 DEBUG [http-nio-9010-exec-5][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:26:00,927 DEBUG [http-nio-9010-exec-5][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:26:00,929 DEBUG [http-nio-9010-exec-5][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:26:00,929 DEBUG [http-nio-9010-exec-5][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:26:18,262 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:26:18,262 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:26:18,262 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:26:18,262 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:26:48,266 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:26:48,266 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:26:48,266 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:26:48,266 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:27:04,683 DEBUG [http-nio-9010-exec-9][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:27:04,683 DEBUG [http-nio-9010-exec-9][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:27:04,684 DEBUG [http-nio-9010-exec-9][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:27:04,684 DEBUG [http-nio-9010-exec-9][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:27:04,687 DEBUG [http-nio-9010-exec-9][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:27:04,687 DEBUG [http-nio-9010-exec-9][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:27:18,275 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:27:18,275 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:27:18,275 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:27:18,275 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:27:48,289 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:27:48,289 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:27:48,289 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:27:48,289 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:28:18,299 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:28:18,299 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:28:18,299 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:28:18,299 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:28:48,301 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:28:48,301 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:28:48,301 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:28:48,301 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:29:18,315 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:29:18,315 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:29:18,315 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:29:18,315 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:29:48,323 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:29:48,323 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:29:48,323 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:29:48,323 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:30:18,324 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:30:18,324 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:30:18,324 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:30:18,324 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:30:48,327 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:30:48,327 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:30:48,327 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:30:48,327 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:31:18,333 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:31:18,333 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:31:18,333 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:31:18,333 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:31:48,345 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:31:48,345 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:31:48,345 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:31:48,345 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:32:18,358 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:32:18,358 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:32:18,358 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:32:18,358 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:32:33,641 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@249d7f75: (connection has passed maxLifetime)
+2023-04-14 16:32:33,641 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@249d7f75: (connection has passed maxLifetime)
+2023-04-14 16:32:33,662 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36210d4b
+2023-04-14 16:32:33,662 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36210d4b
+2023-04-14 16:32:33,743 DEBUG [HikariPool-1 connection closer][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:32:33,743 DEBUG [HikariPool-1 connection closer][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:32:39,610 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@62bdd7df: (connection has passed maxLifetime)
+2023-04-14 16:32:39,610 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@62bdd7df: (connection has passed maxLifetime)
+2023-04-14 16:32:39,625 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61927e6c
+2023-04-14 16:32:39,625 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61927e6c
+2023-04-14 16:32:40,279 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7ff1e55e: (connection has passed maxLifetime)
+2023-04-14 16:32:40,279 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7ff1e55e: (connection has passed maxLifetime)
+2023-04-14 16:32:40,293 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11c59481
+2023-04-14 16:32:40,293 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11c59481
+2023-04-14 16:32:48,369 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:32:48,369 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:32:48,369 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:32:48,369 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:32:51,868 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1930f73: (connection has passed maxLifetime)
+2023-04-14 16:32:51,868 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1930f73: (connection has passed maxLifetime)
+2023-04-14 16:32:51,883 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5179ee14
+2023-04-14 16:32:51,883 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5179ee14
+2023-04-14 16:32:55,097 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7243cf59: (connection has passed maxLifetime)
+2023-04-14 16:32:55,097 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7243cf59: (connection has passed maxLifetime)
+2023-04-14 16:32:55,117 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1044e42f
+2023-04-14 16:32:55,117 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1044e42f
+2023-04-14 16:32:59,133 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@27ff198c: (connection has passed maxLifetime)
+2023-04-14 16:32:59,133 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@27ff198c: (connection has passed maxLifetime)
+2023-04-14 16:32:59,148 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46d778e0
+2023-04-14 16:32:59,148 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46d778e0
+2023-04-14 16:33:01,331 DEBUG [HikariPool-1 housekeeper][HikariPool.java:342] - HikariPool-1 - Add connection elided, waiting 0, queue 1
+2023-04-14 16:33:01,331 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@606b18a3: (connection has passed maxLifetime)
+2023-04-14 16:33:01,331 DEBUG [HikariPool-1 housekeeper][HikariPool.java:342] - HikariPool-1 - Add connection elided, waiting 0, queue 1
+2023-04-14 16:33:01,331 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@606b18a3: (connection has passed maxLifetime)
+2023-04-14 16:33:01,332 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@64258461: (connection has passed maxLifetime)
+2023-04-14 16:33:01,332 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@64258461: (connection has passed maxLifetime)
+2023-04-14 16:33:01,332 DEBUG [HikariPool-1 connection closer][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:33:01,332 DEBUG [HikariPool-1 connection closer][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:33:01,348 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dbcce7a
+2023-04-14 16:33:01,348 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dbcce7a
+2023-04-14 16:33:01,363 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45634d1f
+2023-04-14 16:33:01,363 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45634d1f
+2023-04-14 16:33:02,957 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@df93f9d: (connection has passed maxLifetime)
+2023-04-14 16:33:02,957 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@df93f9d: (connection has passed maxLifetime)
+2023-04-14 16:33:02,971 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25c89515
+2023-04-14 16:33:02,971 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25c89515
+2023-04-14 16:33:06,635 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@310ec44e: (connection has passed maxLifetime)
+2023-04-14 16:33:06,635 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@310ec44e: (connection has passed maxLifetime)
+2023-04-14 16:33:06,654 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@334faa91
+2023-04-14 16:33:06,654 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@334faa91
+2023-04-14 16:33:18,382 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:33:18,382 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:33:18,382 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:33:18,382 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:33:48,389 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:33:48,389 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:33:48,389 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:33:48,389 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:34:18,402 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:34:18,402 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:34:18,402 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:34:18,402 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:34:48,406 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:34:48,406 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:34:48,406 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:34:48,406 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:35:18,419 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:35:18,419 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:35:18,420 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:35:18,420 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:35:48,433 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:35:48,433 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:35:48,433 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:35:48,433 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:36:18,435 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:36:18,435 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:36:18,435 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:36:18,435 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:36:48,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:36:48,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:36:48,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:36:48,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:37:18,460 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:37:18,460 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:37:18,460 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:37:18,460 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:37:48,471 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:37:48,471 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:37:48,471 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:37:48,471 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:38:18,474 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:38:18,474 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:38:18,475 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:38:18,475 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:38:48,488 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:38:48,488 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:38:48,488 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:38:48,488 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:39:18,499 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:39:18,499 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:39:18,499 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:39:18,499 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:39:48,507 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:39:48,507 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:39:48,507 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:39:48,507 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:40:18,508 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:40:18,508 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:40:18,508 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:40:18,508 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:40:48,524 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:40:48,524 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:40:48,524 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:40:48,524 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:41:18,535 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:41:18,535 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:41:18,535 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:41:18,535 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:41:48,546 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:41:48,546 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:41:48,546 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:41:48,546 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:42:18,561 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:42:18,561 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:42:18,561 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:42:18,561 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:42:48,566 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:42:48,566 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:42:48,566 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:42:48,566 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:43:18,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:43:18,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:43:18,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:43:18,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:43:48,585 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:43:48,585 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:43:48,585 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:43:48,585 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:44:18,587 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:44:18,587 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:44:18,587 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:44:18,587 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:44:48,590 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:44:48,590 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:44:48,590 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:44:48,590 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:45:18,592 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:45:18,592 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:45:18,592 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:45:18,592 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:45:48,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:45:48,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:45:48,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:45:48,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:46:18,608 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:46:18,608 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:46:18,608 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:46:18,608 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:46:48,612 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:46:48,612 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:46:48,612 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:46:48,612 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:47:18,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:47:18,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:47:18,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:47:18,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:47:48,628 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:47:48,628 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:47:48,628 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:47:48,628 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:48:18,642 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:48:18,642 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:48:18,642 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:48:18,642 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:48:48,644 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:48:48,644 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:48:48,644 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:48:48,644 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:49:18,654 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:49:18,654 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:49:18,654 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:49:18,654 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:49:48,664 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:49:48,664 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:49:48,664 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:49:48,664 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:50:18,667 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:50:18,667 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:50:18,667 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:50:18,667 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:50:48,676 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:50:48,676 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:50:48,676 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:50:48,676 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:51:18,680 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:51:18,680 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:51:18,680 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:51:18,680 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:51:48,691 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:51:48,691 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:51:48,691 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:51:48,691 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:52:18,699 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:52:18,699 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:52:18,699 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:52:18,699 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:52:48,709 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:52:48,709 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:52:48,709 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:52:48,709 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:53:18,723 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:53:18,723 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:53:18,723 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:53:18,723 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:53:48,732 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:53:48,732 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:53:48,732 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:53:48,732 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:54:18,741 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:54:18,741 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:54:18,741 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:54:18,741 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:54:48,749 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:54:48,749 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:54:48,749 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:54:48,749 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:55:18,760 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:55:18,760 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:55:18,760 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:55:18,760 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:55:48,764 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:55:48,764 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:55:48,764 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:55:48,764 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:56:18,767 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:56:18,767 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:56:18,767 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:56:18,767 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:56:48,771 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:56:48,771 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:56:48,771 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:56:48,771 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:57:18,786 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:57:18,786 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:57:18,786 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:57:18,786 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:57:48,793 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:57:48,793 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:57:48,793 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:57:48,793 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:58:18,795 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:58:18,795 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:58:18,795 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:58:18,795 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:58:48,804 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:58:48,804 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:58:48,804 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:58:48,804 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:59:18,815 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:59:18,815 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:59:18,815 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:59:18,815 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:59:44,678 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:59:44,678 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: select * from items
+2023-04-14 16:59:44,679 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:59:44,679 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 
+2023-04-14 16:59:44,718 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:59:44,718 DEBUG [http-nio-9010-exec-2][BaseJdbcLogger.java:137] - <==      Total: 2
+2023-04-14 16:59:48,830 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:59:48,830 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-04-14 16:59:48,831 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-04-14 16:59:48,831 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
