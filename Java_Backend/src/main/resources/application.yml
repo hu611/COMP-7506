@@ -4,9 +4,9 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: youpassword
+    password: 123456
     url: jdbc:mysql://localhost:3306/comp_7506
 server:
-  port: 9010
+  port: 9012
 logging:
   config: classpath:log4j2-dev.xml

@@ -30,7 +30,7 @@ public class ExampleUnitTest {
     @Test
     public void request_all_image_loc() throws Exception {
 
-        String your_url = "http://localhost:9010/testimage";
+        String your_url = "http://localhost:9012/testimage";
         String your_method = "GET";
         JSONObject jsonObject = Utils.send_http_request(your_url, your_method);
         System.out.println(jsonObject.get("result"));

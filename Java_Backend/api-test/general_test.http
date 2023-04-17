@@ -1,5 +1,7 @@
 ###test get image id
-GET http://localhost:9010/getImage?image=bag.png
+GET http://localhost:9012/getImage?image=bag.png
 
 ###test get image info by userid
-GET http://localhost:9010/getUserImage?user_id=1
+GET http://localhost:9012/getUserImage?user_id=1
+
+#123
