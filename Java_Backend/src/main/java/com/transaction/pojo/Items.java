@@ -31,4 +31,8 @@ public class Items implements Serializable {
 
     private String itemName;
 
+    private String itemDescription;
+
+    private int price;
+
 }

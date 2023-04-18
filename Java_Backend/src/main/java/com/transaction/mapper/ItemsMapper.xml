@@ -8,11 +8,13 @@
         <result column="user_id" property="userId" />
         <result column="item_pic_loc" property="itemPicLoc" />
         <result column="item_name" property="itemName" />
+        <result column="item_description" property="itemDescription" />
+        <result column="price" property="price" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        item_id, user_id, item_pic_loc, item_name
+        item_id, user_id, item_pic_loc, item_name,item_description, price
     </sql>
 
     <select id="selectAllItems" resultMap="BaseResultMap">

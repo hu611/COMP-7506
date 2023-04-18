@@ -1,8 +1,14 @@
 package cs.hku.hk.android_code;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.net.Uri;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -40,6 +46,60 @@ public class Utils {
         throw new RuntimeException("Http request failure");
     }
 
+    public static JSONObject send_image_to_server(String your_url, byte[] img_bytes, String filename) throws Exception {
+
+        String attachmentName = "file";
+        String attachmentFileName = filename;
+        String crlf = "\r\n";
+        String twoHyphens = "--";
+        String boundary =  "*****";
+
+
+        HttpURLConnection httpUrlConnection = null;
+        URL url = new URL(your_url);
+        httpUrlConnection = (HttpURLConnection) url.openConnection();
+        httpUrlConnection.setUseCaches(false);
+        httpUrlConnection.setDoOutput(true);
+
+        httpUrlConnection.setRequestMethod("POST");
+        httpUrlConnection.setRequestProperty("Connection", "Keep-Alive");
+        httpUrlConnection.setRequestProperty("Cache-Control", "no-cache");
+        httpUrlConnection.setRequestProperty(
+                "Content-Type", "multipart/form-data;boundary=" + boundary);
+
+        DataOutputStream request = new DataOutputStream(
+                httpUrlConnection.getOutputStream());
+
+        request.writeBytes(twoHyphens + boundary + crlf);
+        request.writeBytes("Content-Disposition: form-data; name=\"" +
+                attachmentName + "\";filename=\"" +
+                attachmentFileName + "\"" + crlf);
+        request.writeBytes(crlf);
+
+
+        request.write(img_bytes);
+
+        request.writeBytes(crlf);
+        request.writeBytes(twoHyphens + boundary +
+                twoHyphens + crlf);
+
+        request.flush();
+        request.close();
+        int responseCode = httpUrlConnection.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            InputStream inputStream = httpUrlConnection.getInputStream();
+            //convert input stream to string
+            //e.g input_str:{"code":0,"msg":"Success","result":"images/bag.png "}
+            String input_str = convert_input_stream_to_string(inputStream);
+            httpUrlConnection.disconnect();
+            //convert string to json object
+            return new JSONObject(input_str);
+        }
+
+        httpUrlConnection.disconnect();
+        throw new RuntimeException("Http request failure");
+    }
+
     /**
      * Similar to send_http_request function, but only accept bytestream as response
      * @param your_url
@@ -70,5 +130,22 @@ public class Utils {
         }
         return textBuilder.toString();
     }
+
+    public static String get_img_request_url(String pic_loc) {
+        return Constants.BACKEND_LOCATION + "/getImage?image=" + pic_loc;
+    }
+
+    public static byte[] convert_uri_to_inputstream(Context context, Uri uri) throws Exception {
+        InputStream inputStream = context.getContentResolver().openInputStream(uri);
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        byte[]buffer = new byte[1024];
+        int len = 0;
+        while((len = inputStream.read(buffer)) != -1) {
+            byteArrayOutputStream.write(buffer,0,len);
+        }
+        byte[]bytes = byteArrayOutputStream.toByteArray();
+        return bytes;
+    }
+
 
 }

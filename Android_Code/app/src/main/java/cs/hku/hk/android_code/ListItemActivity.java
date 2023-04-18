@@ -1,14 +1,19 @@
 package cs.hku.hk.android_code;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,18 +33,35 @@ public class ListItemActivity extends AppCompatActivity {
 
     String[]textid = new String[20];
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        // 处理返回按钮事件
+        if (id == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_item);
 
+
+
+
         //add footer
-        FooterFragment myFragment = new FooterFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.footer_fragment, myFragment).commit();
+        //FooterFragment myFragment = new FooterFragment();
+        //FragmentManager fragmentManager = getSupportFragmentManager();
+        //fragmentManager.beginTransaction().replace(R.id.footer_fragment, myFragment).commit();
 
         //add a back button to the toolbar
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+
 
         Bundle user_info = getIntent().getExtras();
 
@@ -66,10 +88,8 @@ public class ListItemActivity extends AppCompatActivity {
                     textid = itemNameList;
                     imgid = new Bitmap[imageUrlList.length];
 
-                    //set request urls for different images
-                    String req_url = Constants.BACKEND_LOCATION + "/getImage?image=";
                     for(int i = 0; i < imageUrlList.length;i++) {
-                        imageUrlList[i] = req_url + imageUrlList[i];
+                        imageUrlList[i] = Utils.get_img_request_url(imageUrlList[i]);
                     }
                     for(String imgUrl: imageUrlList) {
                         new DownloadImageTask()
@@ -125,6 +145,16 @@ public class ListItemActivity extends AppCompatActivity {
                     CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), imgid, textid);
                     simpleGrid.setAdapter(customAdapter);
                     curr_idx = 0;
+
+                    GridView gridView = findViewById(R.id.simpleGridView);
+                    gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                            Intent intent = new Intent(ListItemActivity.this, DetailItemActivity.class);
+                            intent.putExtra("itemid",Integer.toString(i+1));
+                            startActivity(intent);
+                        }
+                    });
                 }
 
             } else {

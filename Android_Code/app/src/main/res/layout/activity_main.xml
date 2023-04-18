@@ -23,10 +23,5 @@
         android:text="Test button"
         tools:layout_editor_absoluteX="129dp"
         tools:layout_editor_absoluteY="218dp" />
-    <fragment
-        android:id="@+id/footer_fragment"
-        android:name="cs.hku.hk.android_code.FooterFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>

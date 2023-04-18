@@ -4,4 +4,5 @@ GET http://localhost:9012/getImage?image=bag.png
 ###test get image info by userid
 GET http://localhost:9012/getUserImage?user_id=1
 
-#123
+###test get detailed item
+GET http://localhost:9012/getDetailedItem?item_id=1

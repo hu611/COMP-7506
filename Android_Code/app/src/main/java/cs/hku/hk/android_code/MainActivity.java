@@ -24,10 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button test_button = (Button) findViewById(R.id.button);
 
-        //add footer
-        FooterFragment myFragment = new FooterFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.footer_fragment, myFragment).commit();
         /*
         test_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
          */
         //activity redirect, jump to list item activity
-        Intent intent = new Intent(MainActivity.this, ListItemActivity.class);
+        Intent intent = new Intent(MainActivity.this, MenuActivity.class);
         //send extra information to ListItemActivity
         //intent.putExtra("user","all");
         startActivity(intent);
