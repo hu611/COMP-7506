@@ -13,11 +13,35 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public Users register(String username, String password, String phoneNumber) {
-        Users user = new Users();
-        user.setUserName(username);
-        user.setUserPassowrd(password);
-        user.setUserPhone(phoneNumber);
-        usersMapper.insert(user);
-        return user;
+        Users loginUser = usersMapper.selectUserByName(username);
+        if (loginUser == null) {
+            Users user = new Users();
+            user.setUserName(username);
+            user.setUserPassword(password);
+            user.setUserPhone(phoneNumber);
+            usersMapper.insert(user);
+            return user;
+        } else {
+            System.out.println("exist user with the same name");
+            return null;
+        }
+    }
+
+    //新添加
+    @Override
+    public Users login(String username, String password) {
+        Users loginUser = usersMapper.selectUserByName(username);
+        if (loginUser == null) {
+            System.out.println("please input right user name");
+            return null;
+        } else {
+            if (loginUser.getUserPassword().equals(password)) {
+                System.out.println("login success");
+                return loginUser;
+            } else {
+                System.out.println("please input right password");
+                return null;
+            }
+        }
     }
 }

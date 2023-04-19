@@ -1,11 +1,23 @@
 ###test get image id
-GET http://localhost:9012/getImage?image=bag.png
+GET http://localhost:9014/getImage?image=bag.png
 
 ###test get image info by userid
-GET http://localhost:9012/getUserImage?user_id=1
+GET http://localhost:9014/getUserImage?user_id=1
 
 ###test get detailed item
-GET http://localhost:9012/getDetailedItem?item_id=1
+GET http://localhost:9014/getDetailedItem?item_id=1
 
 ###test register
-POST http://localhost:9012/register?username=ad23&password=123&phone=1111
+POST http://localhost:9014/register?username=ad23&password=123&phone=1111
+
+###test login
+POST http://localhost:9014/login?username=ad23&password=123
+
+###test setPassword
+POST http://localhost:9014/setPassword?userid=1&oldpassword=123&newpassword=234
+
+###test setPhone
+POST http://localhost:9014/setPhone?userid=1&newphone=123456
+
+###test setAddress
+POST http://localhost:9014/setAddress?userid=1&newaddress=KennedyTown

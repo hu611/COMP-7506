@@ -6,7 +6,7 @@
     <resultMap id="BaseResultMap" type="com.transaction.pojo.Users">
         <id column="user_id" property="userId" />
         <result column="user_name" property="userName" />
-        <result column="user_passowrd" property="userPassowrd" />
+        <result column="user_password" property="userPassword" />
         <result column="user_phone" property="userPhone" />
         <result column="user_address" property="userAddress" />
         <result column="user_balance" property="userBalance" />
@@ -14,7 +14,37 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        user_id, user_name, user_passowrd, user_phone, user_address
+        user_id, user_name, user_password, user_phone, user_address, user_balance
     </sql>
 
+    <!--新添加-->
+    <select id="selectUserByName" resultType="com.transaction.pojo.Users">
+        select *
+        from users
+        where user_name = #{user_name}
+    </select>
+
+    <select id="selectUserById" resultType="com.transaction.pojo.Users">
+        select *
+        from users
+        where user_id = #{user_id}
+    </select>
+
+    <update id="updateUserPassword">
+        update users set
+            user_password=#{param2}
+        where user_id=#{param1}
+    </update>
+
+    <update id="updateUserPhone">
+        update users set
+            user_phone=#{param2}
+        where user_id=#{param1}
+    </update>
+
+    <update id="updateUserAddress">
+        update users set
+            user_address=#{param2}
+        where user_id=#{param1}
+    </update>
 </mapper>
