@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
          */
         //activity redirect, jump to list item activity
-        Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+        Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
         //send extra information to ListItemActivity
         //intent.putExtra("user","all");
         startActivity(intent);

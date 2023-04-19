@@ -1,4 +1,8 @@
 package com.transaction.service;
 
-public class LoginService {
+
+import com.transaction.pojo.Users;
+
+public interface LoginService {
+    Users register(String username, String password, String phoneNumber);
 }

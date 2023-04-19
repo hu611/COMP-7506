@@ -2,6 +2,7 @@ package com.transaction;
 
 import com.transaction.pojo.Items;
 import com.transaction.pojo.ResponseItemsDto;
+import com.transaction.service.LoginService;
 import com.transaction.service.TransactionService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,10 @@ import java.util.List;
 class SecondHandTransactionApplicationTests {
     @Autowired
     TransactionService transactionService;
+
+    @Autowired
+    LoginService loginService;
+
     @Test
     void contextLoads() {
     }
@@ -36,6 +41,11 @@ class SecondHandTransactionApplicationTests {
     @Test
     void test_get_all_transactions() {
 
+    }
+
+    @Test
+    void test_register() {
+        loginService.register("aa","ddad","111111");
     }
 
 

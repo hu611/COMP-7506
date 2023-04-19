@@ -6,3 +6,6 @@ GET http://localhost:9012/getUserImage?user_id=1
 
 ###test get detailed item
 GET http://localhost:9012/getDetailedItem?item_id=1
+
+###test register
+POST http://localhost:9012/register?username=aaa&password=123&phone=1111
