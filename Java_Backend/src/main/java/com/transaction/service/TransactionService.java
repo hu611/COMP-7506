@@ -17,4 +17,6 @@ public interface TransactionService {
     public void sellItem(SellItemsDto sellItemsDto) throws Exception;
 
     public void buyItem(BuyItemsDto buyItemsDto) throws Exception;
+
+    ResponseItemsDto getUserBoughtItem(String user_id);
 }

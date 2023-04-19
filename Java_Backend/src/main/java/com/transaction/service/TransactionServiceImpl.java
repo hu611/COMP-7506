@@ -56,8 +56,7 @@ public class TransactionServiceImpl implements TransactionService {
 
 
     public byte[] getImageByte(String image_id) throws Exception{
-        File file = ResourceUtils.getFile(
-                String.format("classpath:images/%s", image_id));
+        File file = new File("src/main/resources/images/"+ image_id);
         System.out.println(file.getName());
         InputStream inputStream = new FileInputStream(file);
         return IOUtils.toByteArray(inputStream);
@@ -121,5 +120,20 @@ public class TransactionServiceImpl implements TransactionService {
 
     public boolean canAfford(Users user, Items item) {
         return user.getUserBalance() >= item.getPrice();
+    }
+
+    public ResponseItemsDto getUserBoughtItem(String user_id) {
+        ResponseItemsDto responseItemsDto = new ResponseItemsDto();
+        List<BoughtItems> boughtItemsList = boughtItemsMapper.getBoughtItemsByBuyerId(Integer.parseInt(user_id));
+        String[] imageUrlList = new String[boughtItemsList.size()];
+        String[] itemNameList = new String[boughtItemsList.size()];
+        int idx = 0;
+        for(BoughtItems boughtItems: boughtItemsList) {
+            imageUrlList[idx] = boughtItems.getItemPicLoc();
+            itemNameList[idx++] = boughtItems.getItemName();
+        }
+        responseItemsDto.setItemNameList(itemNameList);
+        responseItemsDto.setImageUrlList(imageUrlList);
+        return responseItemsDto;
     }
 }

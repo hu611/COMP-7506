@@ -28,12 +28,21 @@ public class TransactionController {
     @ResponseBody
     public RestResponse getUserImage(@RequestParam(value = "user_id",required = false) String user_id) {
         ResponseItemsDto res = transactionService.getUserImage(user_id);
+
+        return RestResponse.success(res,"Success");
+    }
+
+    @GetMapping("/getUserBoughtItem")
+    @ResponseBody
+    public RestResponse getUserBoughtItem(@RequestParam(value = "user_id") String user_id) {
+        ResponseItemsDto res = transactionService.getUserBoughtItem(user_id);
         return RestResponse.success(res,"Success");
     }
 
     @GetMapping("/getImage")
     @ResponseBody
     public byte[] getImageBasedOnId(@RequestParam("image") String image_name) throws Exception{
+        System.out.println(image_name);
         return transactionService.getImageByte(image_name);
     }
 

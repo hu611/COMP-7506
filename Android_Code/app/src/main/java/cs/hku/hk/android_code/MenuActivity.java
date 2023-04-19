@@ -16,19 +16,12 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         Button buy_button = (Button) findViewById(R.id.btn_buy);
         Button sell_button = (Button) findViewById(R.id.btn_sell);
+        Button bought_button = (Button) findViewById(R.id.btn_bought_items);
         Bundle user_info = getIntent().getExtras();
-        String userId;
-        if(user_info != null) {
-            userId = user_info.getString("userId");
-        } else {
-            Toast.makeText(getApplicationContext(),"Please login first",Toast.LENGTH_LONG).show();
-            return;
-        }
         buy_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuActivity.this, ListItemActivity.class);
-                intent.putExtra("userId",userId);
                 startActivity(intent);
             }
         });
@@ -37,7 +30,14 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuActivity.this, SellItemActivity.class);
-                intent.putExtra("userId",userId);
+                startActivity(intent);
+            }
+        });
+
+        bought_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this, BoughtItemActivity.class);
                 startActivity(intent);
             }
         });

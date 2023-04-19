@@ -3,6 +3,7 @@ package cs.hku.hk.android_code;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 
 import org.json.JSONObject;
 
@@ -69,6 +70,14 @@ public class Utils {
         }
         conn.disconnect();
         throw new RuntimeException("Http request failure");
+    }
+
+    public static void save_to_shared_preference(String key, String value, Context context) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(key, value).apply();
+    }
+
+    public static String get_shared_preference(String key, Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context).getString(key,null);
     }
 
     public static JSONObject send_image_to_server(String your_url, byte[] img_bytes, String filename) throws Exception {

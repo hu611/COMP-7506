@@ -1,9 +1,7 @@
 package cs.hku.hk.android_code;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,7 +13,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -24,8 +21,8 @@ import java.io.InputStream;
 
 import okhttp3.OkHttpClient;
 
-public class ListItemActivity extends AppCompatActivity {
-    OkHttpClient client = new OkHttpClient();
+public class BoughtItemActivity extends AppCompatActivity {
+
     Bitmap[]imgid = new Bitmap[20];
 
     int curr_idx = 0;
@@ -63,14 +60,17 @@ public class ListItemActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
 
+
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
+                    String userid = null;
+                    userid = Utils.get_shared_preference("userId",getBaseContext());
 
-                    String suffix = "";
+                    String suffix = "?user_id=" + userid;
                     //this will return a list of item image path and item name
-                    JSONObject getPicUrls = Utils.send_http_request(Constants.BACKEND_LOCATION + "/getUserImage" + suffix,
+                    JSONObject getPicUrls = Utils.send_http_request(Constants.BACKEND_LOCATION + "/getUserBoughtItem" + suffix,
                             "GET");
                     JSONObject result = getPicUrls.getJSONObject("result");
                     String imageUrls = result.getString("imageUrlList");
@@ -86,7 +86,7 @@ public class ListItemActivity extends AppCompatActivity {
                         imageUrlList[i] = Utils.get_img_request_url(imageUrlList[i]);
                     }
                     for(String imgUrl: imageUrlList) {
-                        new DownloadImageTask(Utils.get_shared_preference("userId",getBaseContext()))
+                        new BoughtItemActivity.DownloadImageTask()
                                 .execute(imgUrl);
                     }
 
@@ -116,10 +116,7 @@ public class ListItemActivity extends AppCompatActivity {
     }
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
 
-        String userId;
-
-        public DownloadImageTask(String userId) {
-            this.userId = userId;
+        public DownloadImageTask() {
         }
 
         protected Bitmap doInBackground(String... urls) {
@@ -128,7 +125,7 @@ public class ListItemActivity extends AppCompatActivity {
                 InputStream inputStream = Utils.send_image_request(request_url, "GET");
                 return BitmapFactory.decodeStream(inputStream);
             } catch (Exception e) {
-                Log.e("ListItemActivity", "doInBackground: ." + request_url);
+                Log.e("BoughtItemActivity", "doInBackground: ." + request_url);
                 return null;
             }
         }
@@ -141,17 +138,6 @@ public class ListItemActivity extends AppCompatActivity {
                     //last index
                     CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), imgid, textid);
                     simpleGrid.setAdapter(customAdapter);
-                    curr_idx = 0;
-
-                    GridView gridView = findViewById(R.id.simpleGridView);
-                    gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                            Intent intent = new Intent(ListItemActivity.this, DetailItemActivity.class);
-                            intent.putExtra("itemid",Integer.toString(i));
-                            startActivity(intent);
-                        }
-                    });
                 }
 
             } else {
@@ -161,4 +147,3 @@ public class ListItemActivity extends AppCompatActivity {
         }
     }
 }
-

@@ -74,24 +74,18 @@ public class SellItemActivity extends AppCompatActivity {
                 String item_name = name_edittext.getText().toString();
                 String item_description = description_edittext.getText().toString();
 
-                Bundle user_info = getIntent().getExtras();
                 String userId;
                 JSONObject postData;
 
-                if(user_info != null) {
-                    userId = user_info.getString("userId");
-                    postData = new JSONObject();
-                    try {
-                        postData.put("item_name", item_name);
-                        postData.put("price", price);
-                        postData.put("item_description", item_description);
-                        postData.put("userId", userId);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(),"Please login first",Toast.LENGTH_LONG).show();
-                    return;
+                userId = Utils.get_shared_preference("userId",getBaseContext());
+                postData = new JSONObject();
+                try {
+                    postData.put("item_name", item_name);
+                    postData.put("price", price);
+                    postData.put("item_description", item_description);
+                    postData.put("userId", userId);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
 
                     //check if there are null value

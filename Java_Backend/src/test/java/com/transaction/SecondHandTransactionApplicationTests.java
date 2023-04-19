@@ -1,6 +1,8 @@
 package com.transaction;
 
+import com.transaction.mapper.BoughtItemsMapper;
 import com.transaction.mapper.ItemsMapper;
+import com.transaction.pojo.BoughtItems;
 import com.transaction.pojo.Items;
 import com.transaction.pojo.ResponseItemsDto;
 import com.transaction.service.LoginService;
@@ -23,6 +25,9 @@ class SecondHandTransactionApplicationTests {
 
     @Autowired
     LoginService loginService;
+
+    @Autowired
+    BoughtItemsMapper boughtItemsMapper;
 
     @Autowired
     ItemsMapper itemsMapper;
@@ -56,6 +61,11 @@ class SecondHandTransactionApplicationTests {
     void test_selectItemsByOffset() {
         Items item = itemsMapper.selectByOffSet(2);
         System.out.println(item);
+    }
+
+    @Test
+    void test_bought_mapper() {
+        List<BoughtItems> boughtItemsList = boughtItemsMapper.getBoughtItemsByBuyerId(12);
     }
 
 

@@ -51,7 +51,7 @@ public class DetailItemActivity extends AppCompatActivity {
                 String itemid = null;
                 String user_id = null;
                 if(user_info != null) {
-                    user_id = user_info.getString("userId");
+                    user_id = Utils.get_shared_preference("userId",getBaseContext());
                     itemid = user_info.getString("itemid");
                 } else {
                     return;
@@ -136,7 +136,8 @@ public class DetailItemActivity extends AppCompatActivity {
                                         runOnUiThread(new Runnable() {
                                             @Override
                                             public void run() {
-                                                Toast.makeText(getApplicationContext(),"Buy failed",Toast.LENGTH_LONG).show();
+                                                Toast.makeText(getApplicationContext(),"Buy failed, please make sure you have enough money"
+                                                        ,Toast.LENGTH_LONG).show();
                                             }
                                         });
                                         e.printStackTrace();

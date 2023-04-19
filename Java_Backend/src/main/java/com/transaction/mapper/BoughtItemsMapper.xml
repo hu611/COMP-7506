@@ -17,4 +17,8 @@
         transaction_id, item_name, item_pic_loc, buyer_id, seller_id, deal_price
     </sql>
 
+    <select id="getBoughtItemsByBuyerId" parameterType="Integer" resultMap="BaseResultMap">
+        select * from bought_items where buyer_id = #{buyer_id}
+    </select>
+
 </mapper>
