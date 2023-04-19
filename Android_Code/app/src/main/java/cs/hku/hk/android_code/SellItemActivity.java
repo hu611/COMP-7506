@@ -73,7 +73,28 @@ public class SellItemActivity extends AppCompatActivity {
                 String price = price_edittext.getText().toString();
                 String item_name = name_edittext.getText().toString();
                 String item_description = description_edittext.getText().toString();
-                //check if there are null value
+
+                Bundle user_info = getIntent().getExtras();
+                String userId;
+                JSONObject postData;
+
+                if(user_info != null) {
+                    userId = user_info.getString("userId");
+                    postData = new JSONObject();
+                    try {
+                        postData.put("item_name", item_name);
+                        postData.put("price", price);
+                        postData.put("item_description", item_description);
+                        postData.put("userId", userId);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(),"Please login first",Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                    //check if there are null value
                 if(price.length() == 0 || item_name.length() == 0 || item_description.length() == 0) {
                     Toast.makeText(getApplicationContext(),"Please enter each field accordingly",Toast.LENGTH_LONG).show();
                     return;
@@ -89,14 +110,7 @@ public class SellItemActivity extends AppCompatActivity {
                     return;
                 }
 
-                JSONObject postData = new JSONObject();
-                try {
-                    postData.put("item_name", item_name);
-                    postData.put("price", price);
-                    postData.put("item_description", item_description);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -104,7 +118,8 @@ public class SellItemActivity extends AppCompatActivity {
                             ImageView imageView = findViewById(R.id.imageView);
                             JSONObject jsonObject = Utils.send_image_to_server(Constants.BACKEND_LOCATION +
                                             "/uploadImage", img_bytes,item_name);
-
+                            JSONObject jsonObject1 = Utils.send_http_request_with_json(Constants.BACKEND_LOCATION + "/sellItem"
+                                    ,"POST",postData);
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {

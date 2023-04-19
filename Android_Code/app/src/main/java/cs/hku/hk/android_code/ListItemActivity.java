@@ -92,7 +92,7 @@ public class ListItemActivity extends AppCompatActivity {
                         imageUrlList[i] = Utils.get_img_request_url(imageUrlList[i]);
                     }
                     for(String imgUrl: imageUrlList) {
-                        new DownloadImageTask()
+                        new DownloadImageTask(user_info.getString("userId"))
                                 .execute(imgUrl);
                     }
 
@@ -122,7 +122,10 @@ public class ListItemActivity extends AppCompatActivity {
     }
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
 
-        public DownloadImageTask() {
+        String userId;
+
+        public DownloadImageTask(String userId) {
+            this.userId = userId;
         }
 
         protected Bitmap doInBackground(String... urls) {
@@ -151,7 +154,8 @@ public class ListItemActivity extends AppCompatActivity {
                         @Override
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                             Intent intent = new Intent(ListItemActivity.this, DetailItemActivity.class);
-                            intent.putExtra("itemid",Integer.toString(i+1));
+                            intent.putExtra("itemid",Integer.toString(i));
+                            intent.putExtra("userId", userId);
                             startActivity(intent);
                         }
                     });

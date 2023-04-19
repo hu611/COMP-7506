@@ -20,4 +20,6 @@ import java.util.Map;
 public interface ItemsMapper extends BaseMapper<Items> {
     public List<Items> selectAllItems(Map<String, Object> map);
 
+    public Items selectByOffSet(int offset);
+
 }

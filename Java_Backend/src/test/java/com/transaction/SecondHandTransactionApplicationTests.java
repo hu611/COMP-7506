@@ -1,5 +1,6 @@
 package com.transaction;
 
+import com.transaction.mapper.ItemsMapper;
 import com.transaction.pojo.Items;
 import com.transaction.pojo.ResponseItemsDto;
 import com.transaction.service.LoginService;
@@ -22,6 +23,9 @@ class SecondHandTransactionApplicationTests {
 
     @Autowired
     LoginService loginService;
+
+    @Autowired
+    ItemsMapper itemsMapper;
 
     @Test
     void contextLoads() {
@@ -46,6 +50,12 @@ class SecondHandTransactionApplicationTests {
     @Test
     void test_register() {
         loginService.register("aa","ddad","111111");
+    }
+
+    @Test
+    void test_selectItemsByOffset() {
+        Items item = itemsMapper.selectByOffSet(2);
+        System.out.println(item);
     }
 
 

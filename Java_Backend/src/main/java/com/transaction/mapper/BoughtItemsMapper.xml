@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.transaction.mapper.BoughtItemsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.transaction.pojo.BoughtItems">
+        <id column="transaction_id" property="transactionId" />
+        <result column="item_name" property="itemName" />
+        <result column="item_pic_loc" property="itemPicLoc" />
+        <result column="buyer_id" property="buyerId" />
+        <result column="seller_id" property="sellerId" />
+        <result column="deal_price" property="dealPrice" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        transaction_id, item_name, item_pic_loc, buyer_id, seller_id, deal_price
+    </sql>
+
+</mapper>

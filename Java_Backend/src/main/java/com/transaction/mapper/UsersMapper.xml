@@ -9,6 +9,7 @@
         <result column="user_passowrd" property="userPassowrd" />
         <result column="user_phone" property="userPhone" />
         <result column="user_address" property="userAddress" />
+        <result column="user_balance" property="userBalance" />
     </resultMap>
 
     <!-- 通用查询结果列 -->

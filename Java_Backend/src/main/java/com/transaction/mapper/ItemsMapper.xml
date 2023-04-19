@@ -25,4 +25,8 @@
             </if>
         </where>
     </select>
+
+    <select id="selectByOffSet" resultMap="BaseResultMap" parameterType="Integer">
+        select * from items LIMIT #{offset},1
+    </select>
 </mapper>

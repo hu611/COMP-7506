@@ -15,12 +15,7 @@
         android:text="Item Name"
         android:textSize="50sp"
         android:textStyle="bold" />
-        <TextView
-            android:id="@+id/item_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Item Description"
-            android:textSize="50sp" />
+
     </LinearLayout>
 
     <ImageView
@@ -38,5 +33,12 @@
         android:layout_height="wrap_content"
         android:text="Item Description"
         android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Items"
+        android:textSize="50sp" />
 
 </LinearLayout>

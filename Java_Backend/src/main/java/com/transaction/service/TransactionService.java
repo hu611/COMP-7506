@@ -1,8 +1,7 @@
 package com.transaction.service;
 
-import com.transaction.pojo.DetailedItemDto;
-import com.transaction.pojo.Items;
-import com.transaction.pojo.ResponseItemsDto;
+import com.transaction.pojo.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -12,4 +11,10 @@ public interface TransactionService {
     public byte[] getImageByte(String image_id) throws Exception;
 
     public DetailedItemDto getDetailedItem(String item_id) throws Exception;
+
+    public void saveImage(MultipartFile file) throws Exception;
+
+    public void sellItem(SellItemsDto sellItemsDto) throws Exception;
+
+    public void buyItem(BuyItemsDto buyItemsDto) throws Exception;
 }

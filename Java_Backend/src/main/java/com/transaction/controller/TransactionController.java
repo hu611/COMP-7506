@@ -2,9 +2,7 @@ package com.transaction.controller;
 
 import com.transaction.config.RestResponse;
 import com.transaction.mapper.ItemsMapper;
-import com.transaction.pojo.DetailedItemDto;
-import com.transaction.pojo.ResponseItemsDto;
-import com.transaction.pojo.UploadImageRequestDto;
+import com.transaction.pojo.*;
 import com.transaction.service.TransactionService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,19 +46,21 @@ public class TransactionController {
     @RequestMapping("/uploadImage")
     @ResponseBody
     public RestResponse uploadImage(@RequestParam("file")MultipartFile file) throws Exception{
+        transactionService.saveImage(file);
+        return RestResponse.success();
+    }
 
-        System.out.println(file.getOriginalFilename());
-        InputStream inputStream = file.getInputStream();
-        File targetFile = new File("src/main/resources/"+"a.jpeg");
-        targetFile.createNewFile();
-        FileOutputStream fos = new FileOutputStream(targetFile);
-        byte[]buffer = new byte[1024];
-        int len = 0;
-        while(((len = inputStream.read(buffer)) != -1)) {
-            fos.write(buffer,0,len);
-        }
-        inputStream.close();
-        fos.close();
+    @PostMapping("/sellItem")
+    @ResponseBody
+    public RestResponse sellItem(@RequestBody SellItemsDto sellItemsDto) throws Exception {
+        transactionService.sellItem(sellItemsDto);
+        return RestResponse.success();
+    }
+
+    @PostMapping("/buyItem")
+    @ResponseBody
+    public RestResponse buyItem(@RequestBody BuyItemsDto buyItemsDto) throws Exception {
+        transactionService.buyItem(buyItemsDto);
         return RestResponse.success();
     }
 }

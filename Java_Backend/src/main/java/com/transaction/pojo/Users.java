@@ -32,4 +32,6 @@ public class Users implements Serializable {
 
     private String userAddress;
 
+    private int userBalance;
+
 }

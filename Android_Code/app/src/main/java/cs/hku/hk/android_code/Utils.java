@@ -46,6 +46,31 @@ public class Utils {
         throw new RuntimeException("Http request failure");
     }
 
+    public static JSONObject send_http_request_with_json(String your_url, String your_method, JSONObject jsonObject) throws Exception{
+        URL url = new URL(your_url);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod(your_method);
+        conn.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
+        conn.setDoOutput(true);
+        DataOutputStream os = new DataOutputStream(conn.getOutputStream());
+        os.writeBytes(jsonObject.toString());
+        os.flush();
+        os.close();
+
+        int responseCode = conn.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            InputStream inputStream = conn.getInputStream();
+            //convert input stream to string
+            //e.g input_str:{"code":0,"msg":"Success","result":"images/bag.png "}
+            String input_str = convert_input_stream_to_string(inputStream);
+            conn.disconnect();
+            //convert string to json object
+            return new JSONObject(input_str);
+        }
+        conn.disconnect();
+        throw new RuntimeException("Http request failure");
+    }
+
     public static JSONObject send_image_to_server(String your_url, byte[] img_bytes, String filename) throws Exception {
 
         String attachmentName = "file";
@@ -53,7 +78,6 @@ public class Utils {
         String crlf = "\r\n";
         String twoHyphens = "--";
         String boundary =  "*****";
-
 
         HttpURLConnection httpUrlConnection = null;
         URL url = new URL(your_url);

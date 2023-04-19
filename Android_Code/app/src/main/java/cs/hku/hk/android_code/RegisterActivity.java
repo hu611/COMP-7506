@@ -51,6 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     }
                                 });
                                 Intent intent = new Intent(RegisterActivity.this, MenuActivity.class);
+                                intent.putExtra("userId",jsonObject.getString("userId"));
                                 startActivity(intent);
                             } catch (Exception e) {
                                 e.printStackTrace();
