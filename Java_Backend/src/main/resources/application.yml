@@ -12,5 +12,3 @@ spring:
       max-file-size: 100MB
 server:
   port: 9012
-logging:
-  config: classpath:log4j2-dev.xml
