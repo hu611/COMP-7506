@@ -8,4 +8,4 @@ GET http://localhost:9012/getUserImage?user_id=1
 GET http://localhost:9012/getDetailedItem?item_id=1
 
 ###test register
-POST http://localhost:9012/register?username=aaa&password=123&phone=1111
+POST http://localhost:9012/register?username=ad23?password=123?phone=1111

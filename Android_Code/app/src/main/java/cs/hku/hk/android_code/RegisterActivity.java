@@ -2,6 +2,7 @@ package cs.hku.hk.android_code;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,13 +36,37 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
                 String request_url = Constants.BACKEND_LOCATION + "/register?username=" + str_username
-                        + "?password=" + str_password + "?phone=" + str_phone;
-                try {
-                    JSONObject jsonObject = Utils.send_http_request(request_url, "POST");
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    Toast.makeText(getApplicationContext(), "Registration Error", Toast.LENGTH_LONG).show();
-                }
+                        + "&password=" + str_password + "&phone=" + str_phone;
+                System.out.println(request_url);
+
+                    Thread thread = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                JSONObject jsonObject = Utils.send_http_request(request_url, "POST");
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getApplicationContext(), "Registration Successful", Toast.LENGTH_LONG).show();
+                                    }
+                                });
+                                Intent intent = new Intent(RegisterActivity.this, MenuActivity.class);
+                                startActivity(intent);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getApplicationContext(), "Registration Error", Toast.LENGTH_LONG).show();
+                                    }
+                                });
+
+                            }
+                        }
+                    });
+                    thread.start();
+
+
 
                 return;
 
