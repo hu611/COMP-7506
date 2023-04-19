@@ -6,14 +6,15 @@
     <resultMap id="BaseResultMap" type="com.baomidou.entity.Users">
         <id column="user_id" property="userId" />
         <result column="user_name" property="userName" />
-        <result column="user_passowrd" property="userPassowrd" />
+        <result column="user_password" property="userPassword" />
         <result column="user_phone" property="userPhone" />
         <result column="user_address" property="userAddress" />
+        <result column="user_balance" property="userBalance" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        user_id, user_name, user_passowrd, user_phone, user_address
+        user_id, user_name, user_password, user_phone, user_address, user_balance
     </sql>
 
 </mapper>

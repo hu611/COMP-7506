@@ -25,4 +25,12 @@ public class LoginController {
         return loginService.register(username,password,phone);
     }
 
+    //新添加
+    @PostMapping("/login")
+    @ResponseBody
+    public Users login(@RequestParam("username") String username,
+                       @RequestParam("password") String password) {
+        return  loginService.login(username,password);
+    }
+
 }

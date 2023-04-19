@@ -9,7 +9,7 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author weiyanhu
+ * @author Luo Shikun
  * @since 2023-04-19
  */
 public class Users implements Serializable {
@@ -21,11 +21,13 @@ public class Users implements Serializable {
 
     private String userName;
 
-    private String userPassowrd;
+    private String userPassword;
 
     private String userPhone;
 
     private String userAddress;
+
+    private Integer userBalance;
 
     public Integer getUserId() {
         return userId;
@@ -41,12 +43,12 @@ public class Users implements Serializable {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-    public String getUserPassowrd() {
-        return userPassowrd;
+    public String getUserPassword() {
+        return userPassword;
     }
 
-    public void setUserPassowrd(String userPassowrd) {
-        this.userPassowrd = userPassowrd;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
     public String getUserPhone() {
         return userPhone;
@@ -62,15 +64,23 @@ public class Users implements Serializable {
     public void setUserAddress(String userAddress) {
         this.userAddress = userAddress;
     }
+    public Integer getUserBalance() {
+        return userBalance;
+    }
+
+    public void setUserBalance(Integer userBalance) {
+        this.userBalance = userBalance;
+    }
 
     @Override
     public String toString() {
         return "Users{" +
             "userId=" + userId +
             ", userName=" + userName +
-            ", userPassowrd=" + userPassowrd +
+            ", userPassword=" + userPassword +
             ", userPhone=" + userPhone +
             ", userAddress=" + userAddress +
+            ", userBalance=" + userBalance +
         "}";
     }
 }

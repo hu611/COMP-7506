@@ -9,10 +9,10 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
- * @author weiyanhu
+ * @author Luo Shikun
  * @since 2023-04-19
  */
 @Data
@@ -26,10 +26,11 @@ public class Users implements Serializable {
 
     private String userName;
 
-    private String userPassowrd;
+    private String userPassword;
 
     private String userPhone;
 
     private String userAddress;
 
+    private Integer userBalance;
 }
