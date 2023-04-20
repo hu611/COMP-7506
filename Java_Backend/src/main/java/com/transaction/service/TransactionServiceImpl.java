@@ -102,20 +102,31 @@ public class TransactionServiceImpl implements TransactionService {
     @Override
     public void buyItem(BuyItemsDto buyItemsDto) throws Exception {
         Items item = itemsMapper.selectByOffSet(Integer.parseInt(buyItemsDto.getItemId()));
-        Users user = usersMapper.selectById(buyItemsDto.getUserId());
-        if(!canAfford(user, item)) {
+        Users buyer = usersMapper.selectById(buyItemsDto.getUserId());
+        Users seller = usersMapper.selectById(item.getUserId());
+        if(!canAfford(buyer, item)) {
             throw new RuntimeException("User does not have enough money");
         }
-        user.setUserBalance(user.getUserBalance() - item.getPrice());
+        //update buyer and seller balance
+        buyer.setUserBalance(buyer.getUserBalance() - item.getPrice());
+        seller.setUserBalance(seller.getUserBalance() + item.getPrice());
+
+        //configure boughtitems
         BoughtItems boughtItems = new BoughtItems();
         boughtItems.setItemName(item.getItemName());
         boughtItems.setItemPicLoc(item.getItemPicLoc());
-        boughtItems.setBuyerId(user.getUserId());
+        boughtItems.setBuyerId(buyer.getUserId());
         boughtItems.setSellerId(Integer.parseInt(item.getUserId()));
         boughtItems.setDealPrice(item.getPrice());
         itemsMapper.deleteById(item.getItemId());
-        usersMapper.updateById(user);
+        usersMapper.updateById(buyer);
+        usersMapper.updateById(seller);
         boughtItemsMapper.insert(boughtItems);
+    }
+
+    @Override
+    public Users getUserByUserId(String user_id) {
+        return usersMapper.selectById(user_id);
     }
 
     public boolean canAfford(Users user, Items item) {
@@ -123,8 +134,18 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     public ResponseItemsDto getUserBoughtItem(String user_id) {
-        ResponseItemsDto responseItemsDto = new ResponseItemsDto();
+
         List<BoughtItems> boughtItemsList = boughtItemsMapper.getBoughtItemsByBuyerId(Integer.parseInt(user_id));
+        return convertBoughtItemsToResponseItemsDto(boughtItemsList);
+    }
+
+    public ResponseItemsDto getUserSoldItem(String user_id) {
+        List<BoughtItems> soldItemsList = boughtItemsMapper.getBoughtItemsBySellerId(Integer.parseInt(user_id));
+        return convertBoughtItemsToResponseItemsDto(soldItemsList);
+    }
+
+    public ResponseItemsDto convertBoughtItemsToResponseItemsDto(List<BoughtItems> boughtItemsList) {
+        ResponseItemsDto responseItemsDto = new ResponseItemsDto();
         String[] imageUrlList = new String[boughtItemsList.size()];
         String[] itemNameList = new String[boughtItemsList.size()];
         int idx = 0;
@@ -136,4 +157,16 @@ public class TransactionServiceImpl implements TransactionService {
         responseItemsDto.setImageUrlList(imageUrlList);
         return responseItemsDto;
     }
+
+    @Override
+    public Users addBalanceByUserId(String user_id) {
+        Users user = usersMapper.selectById(user_id);
+        if(user.getUserBalance() > 100000) {
+            return user;
+        }
+        user.setUserBalance(user.getUserBalance() + 1000);
+        usersMapper.updateById(user);
+        return user;
+    }
+
 }

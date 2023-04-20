@@ -19,4 +19,10 @@ public interface TransactionService {
     public void buyItem(BuyItemsDto buyItemsDto) throws Exception;
 
     ResponseItemsDto getUserBoughtItem(String user_id);
+
+    ResponseItemsDto getUserSoldItem(String user_id);
+
+    Users getUserByUserId(String user_id);
+
+    Users addBalanceByUserId(String user_id);
 }

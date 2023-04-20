@@ -9,25 +9,37 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Second-hand transaction"
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Code"
         tools:targetApi="31">
         <activity
-            android:name=".BoughtItemActivity"
+            android:name=".MyProfileActivity"
             android:exported="false" />
+        <activity
+            android:name=".SoldItemActivity"
+            android:exported="false"
+            android:label="Sold Item" />
+        <activity
+            android:name=".BoughtItemActivity"
+            android:exported="false"
+            android:label="Bought Item" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Register" />
         <activity
             android:name=".SellItemActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Sell Item" />
         <activity
             android:name=".MenuActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Menu" />
         <activity
             android:name=".DetailItemActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Item detail" />
         <activity
             android:name=".ActivityGridView"
             android:exported="false" />

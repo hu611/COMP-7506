@@ -19,4 +19,6 @@ public interface BoughtItemsMapper extends BaseMapper<BoughtItems> {
 
     public List<BoughtItems> getBoughtItemsByBuyerId(int buyer_id);
 
+    public List<BoughtItems> getBoughtItemsBySellerId(int seller_id);
+
 }

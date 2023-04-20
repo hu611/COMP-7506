@@ -17,7 +17,9 @@ public class MenuActivity extends AppCompatActivity {
         Button buy_button = (Button) findViewById(R.id.btn_buy);
         Button sell_button = (Button) findViewById(R.id.btn_sell);
         Button bought_button = (Button) findViewById(R.id.btn_bought_items);
-        Bundle user_info = getIntent().getExtras();
+        Button sold_button = (Button) findViewById(R.id.btn_sold_items);
+        Button profile_button = (Button) findViewById(R.id.btn_my_profile);
+
         buy_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +40,22 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuActivity.this, BoughtItemActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sold_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this, SoldItemActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        profile_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this, MyProfileActivity.class);
                 startActivity(intent);
             }
         });

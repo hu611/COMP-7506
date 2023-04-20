@@ -21,4 +21,8 @@
         select * from bought_items where buyer_id = #{buyer_id}
     </select>
 
+    <select id="getBoughtItemsBySellerId" parameterType="Integer" resultMap="BaseResultMap">
+        select * from bought_items where seller_id = #{seller_id}
+    </select>
+
 </mapper>

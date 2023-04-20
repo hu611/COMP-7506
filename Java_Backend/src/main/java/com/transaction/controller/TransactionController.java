@@ -39,6 +39,13 @@ public class TransactionController {
         return RestResponse.success(res,"Success");
     }
 
+    @GetMapping("/getUserSoldItem")
+    @ResponseBody
+    public RestResponse getUserSoldItem(@RequestParam(value = "user_id") String user_id) {
+        ResponseItemsDto res = transactionService.getUserSoldItem(user_id);
+        return RestResponse.success(res,"Success");
+    }
+
     @GetMapping("/getImage")
     @ResponseBody
     public byte[] getImageBasedOnId(@RequestParam("image") String image_name) throws Exception{
@@ -72,4 +79,17 @@ public class TransactionController {
         transactionService.buyItem(buyItemsDto);
         return RestResponse.success();
     }
+
+    @GetMapping("/getBalance")
+    @ResponseBody
+    public Users getBalance(@RequestParam("user_id") String user_id) {
+        return transactionService.getUserByUserId(user_id);
+    }
+
+    @PostMapping("/addBalance")
+    @ResponseBody
+    public Users addBalance(@RequestParam("user_id") String user_id) {
+        return transactionService.addBalanceByUserId(user_id);
+    }
+
 }
