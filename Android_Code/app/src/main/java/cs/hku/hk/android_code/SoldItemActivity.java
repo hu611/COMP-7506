@@ -28,7 +28,6 @@ public class SoldItemActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        // 处理返回按钮事件
         if (id == android.R.id.home) {
             onBackPressed();
             return true;
