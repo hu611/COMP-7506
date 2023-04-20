@@ -39,9 +39,17 @@
 
     <Button
         android:textSize="8dp"
+        android:id="@+id/btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Setting" />
+
+    <Button
         android:id="@+id/btn_my_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="My Profile" />
+        android:text="My Profile"
+        android:textSize="8dp" />
 </LinearLayout>

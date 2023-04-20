@@ -47,6 +47,21 @@ public class Utils {
         throw new RuntimeException("Http request failure");
     }
 
+    public static void send_http_request_2(String your_url, String your_method) throws Exception{
+        URL url = new URL(your_url);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod(your_method);
+        conn.connect();
+        int responseCode = conn.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            conn.disconnect();
+        }
+        else {
+            conn.disconnect();
+            throw new RuntimeException("Http request failure");
+        }
+    }
+
     public static JSONObject send_http_request_with_json(String your_url, String your_method, JSONObject jsonObject) throws Exception{
         URL url = new URL(your_url);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();

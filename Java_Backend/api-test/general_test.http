@@ -23,4 +23,4 @@ POST http://localhost:9014/setPhone?userid=1&newphone=123456
 POST http://localhost:9014/setAddress?userid=1&newaddress=KennedyTown
 
 ###test getBalance
-GET http://localhost:9012/getBalance?user_id=9
+GET http://localhost:9014/getBalance?user_id=9

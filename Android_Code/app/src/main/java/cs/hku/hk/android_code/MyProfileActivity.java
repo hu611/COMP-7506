@@ -108,7 +108,7 @@ public class MyProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Utils.save_to_shared_preference("userId","",getBaseContext());
                 //TODO change register activity to login activity if available
-                Intent intent = new Intent(MyProfileActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(MyProfileActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
