@@ -5,51 +5,96 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Button
-        android:textSize="8dp"
-        android:id="@+id/btn_buy"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Buy" />
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:paddingRight="20dp">
 
-    <Button
-        android:textSize="8dp"
-        android:id="@+id/btn_sell"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Sell" />
+        <Button
+            android:id="@+id/btn_buy"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:text="Buy"
+            android:textSize="30dp" />
+        <Button
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_sell"
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="Sell" />
 
-    <Button
-        android:textSize="8dp"
-        android:id="@+id/btn_bought_items"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Bought Items" />
+    </LinearLayout>
 
-    <Button
-        android:textSize="8dp"
-        android:id="@+id/btn_sold_items"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Sold Items" />
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingRight="20dp">
 
-    <Button
-        android:textSize="8dp"
-        android:id="@+id/btn_setting"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Setting" />
+        <Button
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_bought_items"
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="Items Bought" />
 
-    <Button
-        android:id="@+id/btn_my_profile"
+        <Button
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_sold_items"
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="Items   Sold" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="My Profile"
-        android:textSize="8dp" />
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingRight="20dp">
+
+        <Button
+            android:textSize="30dp"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_setting"
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:text="Setting" />
+
+        <Button
+            android:id="@+id/btn_my_profile"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
 </LinearLayout>

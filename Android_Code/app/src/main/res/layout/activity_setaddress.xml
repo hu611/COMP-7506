@@ -11,33 +11,52 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingLeft="55px"
-        android:paddingRight="50px"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         tools:context=".MainActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal"
             >
             <EditText
                 android:id="@+id/newaddress"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:paddingLeft="10dp"
                 android:hint="please input new address"
                 android:inputType="text"/>
         </LinearLayout>
-
-        <Button
-            android:id="@+id/setaddress_button"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="40dp"
-            android:text="set address"
-            android:textColor="@color/white"
-            android:textSize="25dp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="8px"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="8px"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="8px">
+
+            <Button
+                android:id="@+id/setaddress_button"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="set"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
 
     </LinearLayout>
 

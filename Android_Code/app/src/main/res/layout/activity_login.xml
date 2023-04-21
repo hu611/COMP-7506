@@ -11,63 +11,88 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:orientation="vertical"
-      android:paddingLeft="55px"
-      android:paddingRight="50px"
+      android:paddingLeft="15dp"
+      android:paddingRight="15dp"
       tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20px"
-        android:text="Secondary Market"
+        android:layout_marginTop="20dp"
+        android:text="Enjoy shopping now!"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="28dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal"
         >
       <EditText
           android:id="@+id/username"
-          android:layout_width="280dp"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
           android:paddingLeft="10dp"
-          android:hint="please input user name"
+          android:hint="Please input user name"
           android:inputType="text"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="30dp"
         android:paddingLeft="8px">
       <EditText
           android:id="@+id/password"
-          android:layout_width="280dp"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="26dp"
-          android:hint="please input password"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:hint="Please input password"
           android:inputType="textPassword" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="371dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
-        android:text="login"
-        android:textColor="@color/white"
-        android:textSize="25dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="8px">
 
-    <Button
-        android:id="@+id/register_button"
+      <Button
+          android:id="@+id/login_button"
+          android:layout_width="200dp"
+          android:layout_height="48dp"
+          android:text="login"
+          android:textColor="@color/white"
+          android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="8px">
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="rigister Now"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="20px"
-        android:text="register"
-        android:textSize="15dp" />
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Powered by Weiyan HU, Shikun LUO"
+        android:textColor="#9D9D9D"
+        android:textSize="15dp"
+        tools:visibility="visible" />
   </LinearLayout>
 
 </LinearLayout>
