@@ -3,42 +3,61 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
 
-    <TextView
-        android:id="@+id/item_name"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Item Name"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Item Name"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"/>
 
-    <ImageView
-        android:id="@+id/item_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Description:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp" />
 
+            <TextView
+                android:id="@+id/item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Description"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
 
-
-
-    <TextView
-        android:id="@+id/item_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Item Description"
-        android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/btn_buy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Buy Items"
-        android:textSize="50sp" />
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <Button
+                    android:id="@+id/btn_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Items"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
