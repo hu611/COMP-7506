@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import org.json.JSONObject;
 
@@ -47,14 +48,18 @@ public class Utils {
         throw new RuntimeException("Http request failure");
     }
 
-    public static void send_http_request_2(String your_url, String your_method) throws Exception{
+    public static boolean send_http_request_2(String your_url, String your_method) throws Exception{
         URL url = new URL(your_url);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod(your_method);
         conn.connect();
         int responseCode = conn.getResponseCode();
         if (responseCode == HttpURLConnection.HTTP_OK) {
+            InputStream inputStream = conn.getInputStream();
+            String input_str = convert_input_stream_to_string(inputStream);
             conn.disconnect();
+            if(input_str.equals("false")) return false;
+            else return true;
         }
         else {
             conn.disconnect();

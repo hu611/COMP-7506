@@ -44,7 +44,7 @@ public class SetpasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String userid = null;
-                userid = Utils.get_shared_preference("userId",getBaseContext());
+                userid = Utils.get_shared_preference("userId", getBaseContext());
 
                 String str_curpassword = curpassword.getText().toString();
                 String str_newpassword = newpassword.getText().toString();
@@ -55,20 +55,26 @@ public class SetpasswordActivity extends AppCompatActivity {
                 }
 
                 String request_url = Constants.BACKEND_LOCATION + "/setPassword?userid=" + userid
-                        + "&oldpassword=" + str_curpassword +"&newpassword=" + str_newpassword;
+                        + "&oldpassword=" + str_curpassword + "&newpassword=" + str_newpassword;
                 System.out.println(request_url);
 
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        boolean res;
                         try {
-                            Utils.send_http_request_2(request_url, "POST");
+                            res = Utils.send_http_request_2(request_url, "POST");
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Toast.makeText(getApplicationContext(), "Set Password Successful", Toast.LENGTH_LONG).show();
-                                    Intent intent = new Intent(SetpasswordActivity.this, SettingActivity.class);
-                                    startActivity(intent);
+                                    if(res==true) {
+                                        Toast.makeText(getApplicationContext(), "Set Password Successful", Toast.LENGTH_LONG).show();
+                                        Intent intent = new Intent(SetpasswordActivity.this, SettingActivity.class);
+                                        startActivity(intent);
+                                    }
+                                    else {
+                                        Toast.makeText(getApplicationContext(), "Set Password Error", Toast.LENGTH_LONG).show();
+                                    }
                                 }
                             });
                         } catch (Exception e) {
