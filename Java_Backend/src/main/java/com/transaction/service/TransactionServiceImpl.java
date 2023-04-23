@@ -31,6 +31,8 @@ public class TransactionServiceImpl implements TransactionService {
     @Autowired
     public BoughtItemsMapper boughtItemsMapper;
 
+    String file_loc_prefix = "src/main/resources/images/";
+
     @Override
     public ResponseItemsDto getUserImage(String user_id) {
         Map<String, Object> map = new HashMap<>();
@@ -56,7 +58,7 @@ public class TransactionServiceImpl implements TransactionService {
 
 
     public byte[] getImageByte(String image_id) throws Exception{
-        File file = new File("Java_Backend/src/main/resources/images/"+ image_id);
+        File file = new File(file_loc_prefix + image_id);
         System.out.println(file.getName());
         InputStream inputStream = new FileInputStream(file);
         return IOUtils.toByteArray(inputStream);
@@ -76,7 +78,7 @@ public class TransactionServiceImpl implements TransactionService {
     @Override
     public void saveImage(MultipartFile file) throws Exception { ;
         InputStream inputStream = file.getInputStream();
-        File targetFile = new File("Java_Backend/src/main/resources/images/"+file.getOriginalFilename() + ".png");
+        File targetFile = new File(file_loc_prefix +file.getOriginalFilename() + ".png");
         FileOutputStream fos = new FileOutputStream(targetFile);
         byte[]buffer = new byte[1024];
         int len = 0;

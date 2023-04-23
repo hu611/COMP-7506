@@ -16,7 +16,8 @@ public class SettingActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
-            onBackPressed();
+            Intent intent = new Intent(SettingActivity.this, MenuActivity.class);
+            startActivity(intent);
             return true;
         }
 

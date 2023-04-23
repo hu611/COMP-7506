@@ -4,4 +4,4 @@
 /log
 *.log
 /.idea
-/application.yml
+*.yml
