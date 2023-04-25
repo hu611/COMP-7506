@@ -8,4 +8,6 @@ public interface LoginService {
 
     //新添加
     Users login(String username, String password);
+
+    Users loginHku(String username);
 }

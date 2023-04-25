@@ -14,25 +14,28 @@
         android:theme="@style/Theme.Android_Code"
         tools:targetApi="31">
         <activity
+            android:name=".HkuLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".SetaddressActivity"
             android:exported="false"
-            android:label="Set Address"/>
+            android:label="Set Address" />
         <activity
             android:name=".SetphoneActivity"
             android:exported="false"
-            android:label="Set Phone Number"/>
+            android:label="Set Phone Number" />
         <activity
             android:name=".SetpasswordActivity"
             android:exported="false"
-            android:label="Set Password"/>
+            android:label="Set Password" />
         <activity
             android:name=".SettingActivity"
             android:exported="false"
-            android:label="Setting"/>
+            android:label="Setting" />
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:label="Secondary Market"/>
+            android:label="Secondary Market" />
         <activity
             android:name=".MyProfileActivity"
             android:exported="false"

@@ -84,6 +84,21 @@
             android:textSize="20dp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="8px">
+      <Button
+          android:id="@+id/hku_student_login"
+          android:layout_width="wrap_content"
+          android:layout_height="48dp"
+          android:text="HKU Student Login"
+          android:textColor="@color/white"
+          android:textSize="20dp" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="25dp"

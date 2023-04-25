@@ -44,4 +44,26 @@ public class LoginServiceImpl implements LoginService {
             }
         }
     }
+
+    @Override
+    public Users loginHku(String username) {
+        username = get_hku_username(username);
+        Users user = usersMapper.selectUserByName(username);
+        if(user != null) {
+            return user;
+        }
+        user = new Users();
+        user.setUserPassword(generate_pwd());
+        user.setUserName(username);
+        usersMapper.insert(user);
+        return user;
+    }
+
+    public String generate_pwd() {
+        return "hkuhkuhkuhku";
+    }
+
+    public String get_hku_username(String username) {
+        return username + "_hku____";
+    }
 }

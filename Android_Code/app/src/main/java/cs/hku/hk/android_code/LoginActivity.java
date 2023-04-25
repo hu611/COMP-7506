@@ -23,6 +23,15 @@ public class LoginActivity extends AppCompatActivity {
 
         Button login_button = findViewById(R.id.login_button);
         Button register_button = findViewById(R.id.register_button);
+        Button hku_login_button = findViewById(R.id.hku_student_login);
+
+        hku_login_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, HkuLoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override

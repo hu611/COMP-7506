@@ -33,4 +33,10 @@ public class LoginController {
         return  loginService.login(username,password);
     }
 
+    @PostMapping("/loginhku")
+    @ResponseBody
+    public Users loginHku(@RequestParam("username") String username) {
+        return loginService.loginHku(username);
+    }
+
 }
